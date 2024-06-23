@@ -9,12 +9,10 @@ if __name__ == '__main__':
     opcao = int(input("Insira uma opção: "))
 
     if opcao == 1:
-        fabrica = BusTransportFactory
-        fabrica = fabrica.criar_fabrica()
+        fabrica = BusTransportFactory.criar_fabrica()
         transporte = fabrica.criar_transporte(50, "Dinheiro", "Rio de Janeiro", "Volta Redonda")
     elif opcao == 2:
-        fabrica = MetroTransportationFactory()
-        fabrica = fabrica.criar_fabrica()
+        fabrica = MetroTransportationFactory.criar_fabrica()
         transporte = fabrica.criar_transporte(200, "Bilhete Único", "Rio de Janeiro", "Niterói")
     else:
         print("Opção Inválida")
