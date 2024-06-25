@@ -1,7 +1,8 @@
 from transportation_interface import TransportationFactory
-from metro_factory import MetroFactory
 from metro import Metro
 
 class MetroTransportationFactory(TransportationFactory):
     def criar_fabrica(self):
-        return MetroTransportationFactory()
+        print("Criar Fábrica de Metro")
+    def criar_transporte(self, capacidade, pagamento, origem, destino):
+        return  Metro(capacidade, pagamento, origem, destino)
